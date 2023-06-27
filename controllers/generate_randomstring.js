@@ -5,20 +5,20 @@ function sample(array) {
 }
 
 // 隨機產生短網址所需的 5 碼英數組合
-function generateShortUrl() {
+function generateRandomString() {
   const lowerCaseLetters = 'abcdefghijklmnopqrstuvwxyz'
   const upperCaseLetters = lowerCaseLetters.toUpperCase()
   const numbers = '1234567890'
 
   let collection = (lowerCaseLetters + upperCaseLetters + numbers).split('')
 
-  let shorturl = ''
+  let randomString = ''
   for (let i = 0; i < 5; i++) {
-    shorturl += sample(collection)
+    randomString += sample(collection)
   }
 
-  return shorturl
+  return randomString
 }
 
 
-module.exports = generateShortUrl
+module.exports = generateRandomString
