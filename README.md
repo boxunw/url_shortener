@@ -1,7 +1,7 @@
 # 短網址產生器 URL shortener
 將長網址轉換為短網址的工具，使得URL更簡潔、易於分享和使用
 ## Features - 產品功能
-使用者可以在表單輸入原始網址
+1. 使用者可以在表單輸入原始網址
 
 ![image](https://github.com/boxunw/cut_link/blob/main/index.png)
 
@@ -9,7 +9,9 @@
 
 ![image](https://github.com/boxunw/cut_link/blob/main/shorturl.png)
 
-網址可以直接按copy複製至剪貼簿
+2. 網址可以直接按copy複製至剪貼簿
+3. 網址列空白即送出會出現提示
+4. 點擊中間迴紋針圖示會回到首頁
 ## Environment SetUp - 環境建置
 1. [Node.js](https://nodejs.org/zh-tw)
 2. [express 4.17.1](https://www.npmjs.com/package/express/v/4.17.1)
