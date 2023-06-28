@@ -15,7 +15,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.2",
-    "mongoose": "^5.13.19"
+    "mongoose": "^5.13.19",
+    "nodemon": "^2.0.22"
   },
   "devDependencies": {
     "dotenv": "^16.3.1"
