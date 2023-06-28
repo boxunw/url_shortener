@@ -2,9 +2,9 @@
 將長網址轉換為短網址的工具，使得URL更簡潔、易於分享和使用
 ## Features - 產品功能
 使用者可以在表單輸入原始網址
-![image](picture or gif url)
+![image](https://github.com/boxunw/cut_link/blob/main/index.png)
 按下Shorten送出表單之後，畫面會回傳相對應的短網址
-![image](picture or gif url)
+![image](https://github.com/boxunw/cut_link/blob/main/shorturl.png)
 網址可以直接按copy複製至剪貼簿
 ## Environment SetUp - 環境建置
 1. [Node.js](https://nodejs.org/zh-tw)
