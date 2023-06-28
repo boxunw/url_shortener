@@ -57,6 +57,7 @@ app.post('/urls', (req, res) => {
   }
   Url.findOne({ originalURL: originalURL })
     .then(url => {
+      // 若輸入相同網址時則回覆一樣的縮址
       if (url) {
         return res.redirect(`/${url.shortURL}`)
       } else {

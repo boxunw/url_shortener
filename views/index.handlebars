@@ -1,11 +1,15 @@
-<form action="/urls" method="POST" style="display: block;">
-  <div class="input-group">
-    <input class="form-control" type="text" placeholder="Input URL here" name="originalURL">
-    <button class="btn btn-success" type="submit">Shorten</button>
-    {{#if error}}
-    <div class="alert alert-info" role="alert">
-      <span class="mr-2">{{error}}</span>
-    </div>
-    {{/if}}
+<form action="/urls" method="POST">
+  <div class="container d-flex align-items-center justify-content-center mb-3">
+    <input type="text" class="form-control w-75" placeholder="Input URL here" name="originalURL">
+  </div>
+  <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-outline-primary px-5">Shorten</button>
   </div>
 </form>
+{{#if error}}
+<div class="container d-flex align-items-center justify-content-center mt-3">
+  <span class="alert alert-danger px-5" role="alert">
+    {{error}}
+  </span>
+</div>
+{{/if}}
