@@ -4,12 +4,12 @@ const Url = require('../../models/url')
 const generateRandomString = require('../../functions/generate_randomstring')
 
 // 設定路由
-router.get('/:shortURL', (req, res) => {
+router.get('/d/:shortURL', (req, res) => {
   const shortURL = req.params.shortURL
   return res.render('new', { shortURL })
 })
 
-router.get('/d/:shortURL', (req, res) => {
+router.get('/:shortURL', (req, res) => {
   const param = req.params.shortURL
   Url.findOne({ shortURL: param })
     .then(url => res.redirect(url.originalURL))
@@ -26,11 +26,11 @@ router.post('/', (req, res) => {
     .then(url => {
       // 若輸入相同網址時則回覆一樣的縮址
       if (url) {
-        return res.redirect(`/urls/${url.shortURL}`)
+        return res.redirect(`/urls/d/${url.shortURL}`)
       } else {
         const shortURL = generateRandomString()
         Url.create({ originalURL, shortURL })
-        return res.redirect(`/urls/${shortURL}`)
+        return res.redirect(`/urls/d/${shortURL}`)
       }
     })
     .catch(error => console.log(error))
