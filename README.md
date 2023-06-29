@@ -47,7 +47,11 @@ npm install
 ```
 npm run dev
 ```
-8. 在瀏覽器輸入以下網址即可開始使用此工具
+8. 等待終端機出現以下字樣
+```
+mongodb connected!
+```
+9. 在瀏覽器輸入以下網址即可開始使用此工具
 ```
 http://localhost:3000
 ```
