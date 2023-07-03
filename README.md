@@ -3,11 +3,11 @@
 ## Features - 產品功能
 1. 使用者可以在表單輸入原始網址
 
-![image](https://github.com/boxunw/cut_link/blob/main/index.png)
+![image](https://github.com/boxunw/url_shortener/blob/main/index.png)
 
 按下Shorten送出表單之後，畫面會回傳相對應的短網址
 
-![image](https://github.com/boxunw/cut_link/blob/main/shorturl.png)
+![image](https://github.com/boxunw/url_shortener/blob/main/shorturl.png)
 
 2. 網址可以直接按copy複製至剪貼簿
 3. 網址列空白即送出會出現提示
@@ -29,11 +29,11 @@ mongodb+srv://<Your account>:<Your password><server location>/<database name>?re
 ```
 3. 開啟終端機(Terminal)，指令cd到欲放置專案位置，Clone此專案至本機電腦
 ```
-git clone https://github.com/boxunw/cut_link.git
+git clone https://github.com/boxunw/url_shortener.git
 ```
 4. 打開專案資料夾
 ```
-cd cut_link
+cd url_shortener
 ```
 5. 新建.env檔案，並貼上以下字串
 ```
